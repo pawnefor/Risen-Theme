@@ -4,13 +4,16 @@
 body { 
     color: $theme-text-color-secondary;
     background: $theme-bg-primary;
-    font-family: 'Inter', sans-serif;
+    font-family: 'VT323', monospace;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: $theme-text-color-primary;
-	color: white;
-	font-weight: bold;
+	font-family: 'Silkscreen', sans-serif;
+	font-weight: normal;
+	letter-spacing: 0;
 }
 
 
@@ -43,8 +46,9 @@ small {
 	padding: 0.675rem 1.5rem;
 	font-size: 1rem;
 	outline: none;
-	@include border-radius(2rem);
+	@include border-radius(0);
 	text-decoration: none;
+	border: 2px solid $theme-color-primary;
 	svg {
 		stroke-width: 2px;
 		margin-left: 0.25rem;
@@ -97,7 +101,7 @@ small {
 		font-size: 17px;
 		display: inline-block;
 		text-align: center;
-		@include border-radius(50%);		
+		@include border-radius(0);		
 		background: rgba(0, 0, 0, 0.1);
 		color: $theme-text-color-secondary;
 		

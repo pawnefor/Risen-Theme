@@ -4,6 +4,8 @@
 	position: relative;
     padding-top: calc(75px + 1rem);
     background: $theme-bg-secondary;
+    border: 4px solid $theme-border-color;
+    @include border-radius(0);
 }
 
 .resume-profile-pic {
@@ -14,11 +16,13 @@
 	margin-left: -80px;
 	top: -80px;
 	border: 8px solid $theme-bg-secondary;
+	@include border-radius(0);
+	image-rendering: pixelated;
 }
 
 
 .resume-name {
-	letter-spacing: 0.5rem;
+	letter-spacing: 0;
 	font-size: 2.25rem;
 	color: white;
 	font-weight: 900;
@@ -26,14 +30,14 @@
 
 .resume-role-title {
 	font-size: 1.125rem;
-	letter-spacing: 0.25rem;
+	letter-spacing: 0;
 	color: $theme-text-color-secondary;
 	font-weight: 500;
 }
 
 .resume-body {
 	.col-main {
-		border-right: 1px solid rgba(256, 256, 256, 0.2);
+		border-right: 4px solid $theme-border-color;
 	}
 }
 
@@ -44,7 +48,7 @@
 
 .resume-section-heading {
 	font-size: 1.125rem;
-	letter-spacing: 0.15rem;
+	letter-spacing: 0;
 	color: white;
 	font-weight: 900;
 	display: flex;
@@ -52,7 +56,7 @@
 }
 
 .resume-section-heading-icon {
-	@include border-radius(50%);
+	@include border-radius(0);
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -63,11 +67,12 @@
 	background: rgba(0, 0, 0, 0.15);
 	font-size: 1.125rem;
 	color: $theme-text-color-primary;
+	border: 2px solid $theme-border-color;
 }
 
 .resume-contact {
-	border-top: 1px solid rgba(256, 256, 256, 0.2);
-	border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+	border-top: 4px solid $theme-border-color;
+	border-bottom: 4px solid $theme-border-color;
 	padding: 1rem;
 	font-size: 0.875rem;
 }
@@ -82,9 +87,9 @@
 	&:before {
 		content: "";
 		display: inline-block;
-	    width: 3px;
+	    width: 4px;
 	    height: 100%;
-	    background: rgba(0, 0, 0, 0.1);
+	    background: $theme-border-color;
 	    left: 13px;
 	    top: 16px;
 	    position: absolute;
@@ -98,7 +103,7 @@
 .resume-company-name {
 	background: rgba(0, 0, 0, 0.1);
 	padding: 0.2rem 0.5rem;
-	@include border-radius(0.25rem);
+	@include border-radius(0);
 	font-weight: 600;
 	
 }
@@ -119,7 +124,7 @@
 		height: 10px;
 		border: 2px solid $theme-text-color-secondary;
 		background: rgba(0, 0, 0, 0.3);
-		@include border-radius(50%);
+		@include border-radius(0);
 	}
 }
 
@@ -150,14 +155,15 @@
 }
 
 .resume-progress {
-	@include border-radius(0.25rem);
-	height: 0.3rem;
+	@include border-radius(0);
+	height: 1rem;
 	background: $theme-bg-primary;
 	margin-bottom: 1rem;
+	border: 2px solid $theme-border-color;
 }
 .resume-progress-bar {
-	@include border-radius(0.25rem);
-	background-color: darken($theme-text-color-secondary, 10%);
+	@include border-radius(0);
+	background-color: $theme-color-primary;
 }
 
 .resume-skill-badge {
@@ -166,6 +172,8 @@
 	color: rgba(256, 256, 256, 0.8);
 	padding: 0.5rem 0.65rem;
 	margin-bottom: 0.5rem;
+	@include border-radius(0);
+	border: 2px solid $theme-border-color;
 }
 
 .resume-projects-section {
@@ -210,18 +218,20 @@
 .resume-level-indicator {
 	margin-top: 2px;
 	.item {
-		width: 85%;
-		min-height: 10px;
-		@include border-radius(2px);
+		width: 10px;
+		height: 10px;
+		@include border-radius(0);
 		display: inline-block;	
 		background: $theme-bg-primary;
 		position: relative;
+		border: 1px solid $theme-border-color;
+		margin-right: 2px;
 		
 		&:last-child {
 			margin-right: 0;
 		}
 		&.item-full {
-			background: darken($theme-text-color-secondary, 10%);
+			background: $theme-color-primary;
 		}
 		&.item-half {
 		
@@ -233,7 +243,7 @@
 				height: 100%;
 				left: 0;
 				top: 0;
-				background: darken($theme-text-color-secondary, 10%);
+				background: $theme-color-primary;
 				
 			}
 		}
