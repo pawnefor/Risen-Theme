@@ -10,7 +10,7 @@ $theme-text-color-light: rgba(255, 255, 255, 0.4);
 $theme-bg-primary: #1a233a; 
 $theme-bg-secondary: #2a344a;
 $theme-bg-light: #3a455a;
-$theme-border-color: #00ffff;
+$theme-border-color: #adb5bd;
 $theme-error: #ff0000;
 
 
@@ -21,6 +21,7 @@ $theme-error: #ff0000;
 /* Override BS5 sass color */
 $primary: $theme-color-primary;
 $secondary: $theme-bg-light;
+$border-color: $theme-border-color;
 
 /*************************** Import Bootstrap  *****************************/
 @import "bootstrap/scss/bootstrap.scss";

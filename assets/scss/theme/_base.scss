@@ -48,7 +48,7 @@ small {
 	outline: none;
 	@include border-radius(0);
 	text-decoration: none;
-	border: 2px solid $theme-color-primary;
+	border: 2px solid $theme-border-color;
 	svg {
 		stroke-width: 2px;
 		margin-left: 0.25rem;
